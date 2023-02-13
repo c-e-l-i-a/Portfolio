@@ -1,0 +1,47 @@
+:root {
+    --main-bg-color: #242425;
+    --secondary-bg-color: #BB9647;
+    --main-font-color: #EAEAEA;
+    --secondary-font-color: #BB9647;
+    --third-font-color: #AD974F;
+
+}
+
+
+body {
+    background-color: #242425;
+    color: #EAEAEA;
+    font-family: 'Poppins', sans-serif;
+}
+
+#side_nav {
+    background: #000;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar .primary-menu li.active {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar .primary-menu li.active a, 
+.sidebar .primary-menu li.active a:hover {
+    color: #000;
+}
+
+.sidebar .primary-menu li a, 
+.secondary-menu li a{
+    color: #fff;
+}
+
+
+
+
+
+
