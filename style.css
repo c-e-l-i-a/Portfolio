@@ -22,6 +22,9 @@ body {
 a {
     text-decoration: none;
 }
+h1 {
+    color: var(--secondary-font-color);
+}
 aside {
     background: #000;
 }
@@ -49,6 +52,11 @@ aside {
 #sidebar #nav li a.active, 
 #sidebar #nav li a:hover {
     color: var(--secondary-font-color);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .fullscreen {
