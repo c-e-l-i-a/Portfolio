@@ -1,13 +1,9 @@
-const liMenu = document.querySelectorAll('.menu-text')
+const ulList = document.getElementById('nav').querySelectorAll('a')
+console.log(ulList);
 
-for(let i=0; i < liMenu.length; i++) {
-    liMenu[i].addEventListener('click', () => {
-        console.log('clicked');
-        const current = document.querySelector('.active')
-        console.log(current);
-        if(current.length > 0) {
-            current[0].className = current[0].className.replace(".active", "");
-        }
-        this.className += ".active";
+ulList.forEach(element => {
+    element.addEventListener('click', () => {
+        ulList.forEach(li => li.classList.remove('active'))
+        element.classList.add('active')
     })
-}
+})

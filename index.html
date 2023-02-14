@@ -13,35 +13,86 @@
 </head>
 <body>
   <div class="main-wrapper">
-    <div class="header d-flex">
-        <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 pt-3 pb-3">
-                <div class="navbar-brand texte-white">TORNO Célia</div>
-                <button class="btn close-btn d-md-none d-block px-1 py-0"><i class="bi bi-list" style="color: white;"></i></button>
-            </div>
 
-            
-            <ul class="primary-menu list-unstyled px-2">
-                <li class="menu-text active"><a href="#" class="text-decoration-none d-block px-3 py-2">Home</a></li>
-                <li><a href="#" class="menu-text text-decoration-none d-block px-3 py-2">About</a></li>
-                <li><a href="#" class="menu-text text-decoration-none d-block px-3 py-2">Projects</a></li>
-                <li><a href="#" class="menu-text text-decoration-none d-block px-3 py-2">Contact</a></li>
-            </ul>
+    <div class="container-fluid">
+        <div class="row flex-column flex-md-row">
 
-            <hr class="h-color mx -2 ">
+            <!--NAV BAR START-->
+            <aside class="col-12 p-0 flex-shrink-1">
+                <nav class="navbar h-100 navbar-expand-md navbar-dark bd-dark flex-md-column justify-content-md-between flex-row align-items-center ps-md-0 py-3 ps-2  text-center sticky-top" id="sidebar">
+                   
+                    <div class="text-center">
+                        <a href="#" class="navbar-brand mx-0 font-weight-bold text-nowrap">TORNO Célia</a>
+                    </div>
+                    
+                    <button type="button" class="navbar-toggler border-0 order-1" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" arial-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse prder-last" id="nav">
+                        <ul class="navbar-nav flex-column w-100 justify-content-center">
+                            <li class="nav-item">
+                                <a href="#" class="my-links active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="my-links">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="my-links">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="my-links">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
 
-             <ul class="secondary-menu list-unstyled mx-auto d-flex flex-direction-row justify-content-center">
-                <li class="px-2"><a href="#" class="text-decoration-none"><i class="bi bi-envelope-at" style ="font-size: 20px;"></i></a></li>
-                <li class="px-2"><a href="#" class="text-decoration-none"><i class="bi bi-linkedin" style ="font-size: 20px;"></i></a></li>
-                <li class="px-2"><a href="#" class="text-decoration-none"><i class="bi  bi-github" style ="font-size: 20px;"></i></a></li>
-                <li class="px-2"><a href="#" class="text-decoration-none"><i class="bi bi-triangle-fill" style ="font-size: 20px;"></i></a></li>
-            </ul>
-        </div>
-        <div class="content">
+                    <ul class="nav justify-content-center align-self-md-center">
+                        <li class="nav-item">
+                            <a href="#" class="socials-link text-white"><i class="bi bi-envelope-at" style ="font-size: 17px;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="socials-link text-white"><i class="bi bi-linkedin" style ="font-size: 17px;"></i></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="socials-link text-white"><i class="bi  bi-github" style ="font-size: 17px;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="socials-link text-white"><i class="bi bi-triangle-fill" style ="font-size: 17px;"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+             <!--NAV BAR END-->
 
+              <!--MAIN CONTENT START-->
+            <main class="col px-0 flex-grow-1">
+
+                <section class="home">
+                    <div class="hero">
+                        <div class="hero-content d-flex fullscreen">
+                            <div class="container my-auto ms-md-5">
+
+                                <div class="row">
+                                    <div class="col-12 text-center text-md-start">
+                                        <h2>Hey, I'm TORNO Célia</h2>
+                                        <h1>I'm a Front-End developer</h1>
+                                        <p>...with the ambition of becoming a full-stack developer</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="about"></section>
+                <section class="projects"></section>
+                <section class="contacts"></section>
+
+            </main>
+             <!--MAIN CONTENT END-->
         </div>
     </div>
-  </div>
+ </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="main.js"></script>
