@@ -25,8 +25,20 @@ a {
 h1 {
     color: var(--secondary-font-color);
 }
+p.size {
+    font-size: 16px;
+}
+
+.container, .container-fluid {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+
 aside {
     background: #000;
+    position: fixed;
 }
 
 .navbar-brand {
@@ -47,6 +59,7 @@ aside {
 #sidebar #nav li a {
     padding: 5px;
     color: #ddd;
+    font-size: 20px;
 }
 
 #sidebar #nav li a.active, 
@@ -59,19 +72,50 @@ aside {
     box-shadow: none;
 }
 
+
+.main-content {
+    padding: 0;
+}
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#about, #contacts {
+    background: #313133;
+}
+
 .fullscreen {
     height: 100vh;
 }
 
+.heading-separator-line {
+    width: 80px;
+    color: var(--secondary-bg-color) !important;
+}
+
+#skills-list p i {
+    color: var(--secondary-font-color);
+}
+
+#about-p p span {
+    color: var(--secondary-font-color);
+}
 
 @media (min-width: 768px) {
     aside{
-       width: 150px !important;
+       width: 180px !important;
        height: 100vh;
     } 
 
     #sidebar{
         display: flex;
         justify-content: space-between !important;
+    }
+
+    .main-content {
+        padding-left: 180px;
+        padding-right: 0;
     }
 }
