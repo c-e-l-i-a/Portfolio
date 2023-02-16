@@ -32,16 +32,16 @@
                     <div class="collapse navbar-collapse prder-last" id="nav">
                         <ul class="navbar-nav flex-column w-100 justify-content-center">
                             <li class="nav-item">
-                                <a href="#" class="my-links active">Home</a>
+                                <a href="#home" class="my-links active">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="my-links">About</a>
+                                <a href="#about" class="my-links">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="my-links">Projects</a>
+                                <a href="#projects" class="my-links">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="my-links">Contacts</a>
+                                <a href="#contacts" class="my-links">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -93,19 +93,18 @@
                         </div>
 
                         <div id="about-p" class="text-center my-5">
-                            <p>Wellcome ! <br>I am a 26 years old front-end developer <br>
-                            Always <span>improving</span> myself, <span>trying</span> new things and <span>discovering</span> new technologies.</p>
+                            <p>"Always <span>improving</span> myself, <span>trying</span> new things and <span>discovering</span> new technologies."</p>
                         </div>
 
-                        <div id="skills-list" class="row gy-5 gx-5">
-                            <div class="col-6 col-lg-4">
+                        <div id="skills-list" class="row justify-content-sm-center gy-5 gx-5 mb-5">
+                            <div class="col col-lg-4 ">
                                 <h4>Programming<br> Languages</h4>
                                 <span class="heading-separator-line border-1 border-bottom d-block mb-4"></span>
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-heart fs-4 me-3"></i>HTML</p>
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-heart fs-4 me-3"></i>CSS</p>
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-heart fs-4 me-3"></i>JAVASCRIPT</p>                   
                             </div>
-                            <div class="col-6 col-lg-4">
+                            <div class="col col-lg-4">
                                 <h4>Frameworks &<br> Libraries</h4>
                                 <span class="heading-separator-line border-1 border-bottom d-block mb-4"></span>
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-heart fs-4 me-3"></i>BOOTSTRAP</p>
@@ -113,7 +112,7 @@
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-dots fs-4 me-3"></i>THREE.JS</p>
         
                             </div>
-                            <div class="col-6 mx-auto col-lg-4">
+                            <div class="col col-lg-4">
                                 <h4>Tools &<br> Others</h4>
                                 <span class="heading-separator-line border-1 border-bottom d-block mb-4"></span>
                                 <p class="p-size text-start mb-2"><i class="bi bi-chat-right-heart fs-4 me-3"></i>GIT / GITHUB</p>
@@ -133,24 +132,72 @@
                             <span class="heading-separator-line border-3 border-bottom d-block mx-auto"></span>
                         </div>
 
-                        <div class="row d-flex justify-content-center gy-5 gx-5">
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row d-flex justify-content-center gy-5 gx-5 mb-5">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="img-content">
                                 <img src="src/project-1.png" alt="project image" class="img-fluid">
+                                <div class="text d-flex flex-column align-items-center justify-content-center"><h5 class="text-uppercase fw-bold">FIGURES SHOPP</h5></div>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="img-content">
                                 <img src="src/project-1.png" alt="project image" class="img-fluid">
+                                <div class="text d-flex flex-column align-items-center justify-content-center"><h5 class="text-uppercase fw-bold">Figures Shopp</h5></div>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="img-content">
                                 <img src="src/project-1.png" alt="project image" class="img-fluid">
+                                <div class="text d-flex flex-column align-items-center justify-content-center"><h5 class="text-uppercase fw-bold">Figures Shopp</h5></div>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="img-content">
                                 <img src="src/project-1.png" alt="project image" class="img-fluid">
+                                <div class="text d-flex flex-column align-items-center justify-content-center"><h5 class="text-uppercase fw-bold">Figures Shopp</h5></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="contacts" class="contacts"></section>
+                <section id="contacts" class="contacts">
+                    <div class="container px-3 px-md-5">
+                        <div class="text-center mb-5">
+                            <h2>Contact Me</h2>
+                            <span class="heading-separator-line border-3 border-bottom d-block mx-auto"></span>
+                        </div>
+
+                        <div class="row g-3">
+                            <form onsubmit="sendEmail(); reset(); return false">
+                            <div class="col-12 col-md-6 mb-2">
+                                <label for="firstname" class="form-label">First Name</label>
+                                <input type="text" id="firstName" class="form-control" aria-label="First name" required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-2">
+                                <label for="lastname" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" aria-label="Last name"
+                                required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-2">
+                                <label for="name" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" required>
+                            </div>
+                            <div class="col-12 col-md-12 mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control fs-6 py-2 px-1 rounded" id="message" rows="5"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="send-btn py-1 px-3 rounded text-uppercase">Send</button>
+                              </div>
+                            </form>
+                        </div>
+
+                        <div id ="rights" class="row">
+                            <div class="col-12 text-center"><p class="fs-6">Copyright © 2023 <span class="all-rights">TORNO Célia</span> All Rights Reserved.</p></div>
+                        </div>
+                    </div>
+                </section>
 
             </main>
              <!--MAIN CONTENT END-->
@@ -159,6 +206,7 @@
  </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
